@@ -26,7 +26,7 @@ pipeline {
                 script {
                     sh 'docker stop reactapp || true'
                     sh 'docker rm reactapp || true'
-                    sh 'docker run -d --name demoreactapp -p 5000:5000 reactapp'
+                    sh 'docker run -d --name reactapp -p 5000:5000 reactapp'
                 }
             }
         }
