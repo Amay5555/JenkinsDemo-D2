@@ -9,6 +9,7 @@ Created a Jenkinsfile which takes the code from a remote github repository and a
 
 # Create a webhook 
 Create a webhook by using github,ngrok and jenkins. As github can only send the webhook to a public URL.
+<img width="922" alt="webhook delivery" src="https://github.com/user-attachments/assets/95cf0720-8170-4bb1-bcd2-f1687966b6c1" />
 
 <img width="674" alt="triggered webhook cmd" src="https://github.com/user-attachments/assets/babe5b86-b596-4a74-a4d7-6832a090ad7c" />
 
