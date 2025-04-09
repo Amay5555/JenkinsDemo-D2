@@ -18,7 +18,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 
-                    sh 'docker run --rm reactapp npm test'
+                    sh 'docker run --rm reactapp npm test -- --watchAll=false'
             }
         }
         stage('Deploy') {
@@ -26,7 +26,7 @@ pipeline {
                 script {
                     sh 'docker stop reactapp || true'
                     sh 'docker rm reactapp || true'
-                    sh 'docker run -d --name demoreactapp -p 5000:5000 reactapp'
+                    sh 'docker run -d --name demoreactapp -p 3000:3000 reactapp'
                 }
             }
         }
