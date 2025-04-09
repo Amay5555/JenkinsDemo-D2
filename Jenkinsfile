@@ -18,7 +18,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 
-                    sh 'docker run --rm reactapp npm test'
+                    sh 'docker run --rm reactapp npm test -- --watchAll=false'
             }
         }
         stage('Deploy') {
